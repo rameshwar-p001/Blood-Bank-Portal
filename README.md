@@ -143,7 +143,3 @@ npm run build
 
 The application is ready for deployment on platforms like Vercel, Netlify, or Firebase Hosting.
 
-**Built with ❤️ for saving lives through technology**
-
-
-**Built By Rameshwar Patil**
