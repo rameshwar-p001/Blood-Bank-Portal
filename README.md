@@ -141,7 +141,48 @@ npm run build
 
 ## 🚀 Deployment
 
-The application is ready for deployment on platforms like Vercel, Netlify, or Firebase Hosting.
+### Quick Deploy to Vercel
+
+1. **Install Vercel CLI:**
+   ```bash
+   npm install -g vercel
+   ```
+
+2. **Deploy:**
+   ```bash
+   vercel
+   ```
+
+3. **Add Environment Variables** in Vercel dashboard (Settings → Environment Variables)
+
+4. **Redeploy** to apply environment variables
+
+For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md)
+
+### Other Platforms
+The application can also be deployed on:
+- Netlify
+- Firebase Hosting  
+- AWS Amplify
+- GitHub Pages
+
+## 📋 Environment Variables for Production
+
+Make sure to add these environment variables in your deployment platform:
+
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID_APPLY=your_apply_template_id
+VITE_EMAILJS_TEMPLATE_ID_STATUS=your_status_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+VITE_EMAILJS_USER_ID=your_user_id
+VITE_FIREBASE_API_KEY=your_firebase_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project.firebasestorage.app
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+```
 
 **Built with ❤️ for saving lives through technology**
 
